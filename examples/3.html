@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <head>
+    <title>Скрипник ПІ 19-01</title>
+  </head>
+  <body>
+    <input type="text" onblur="this.value=removeRedundantSpaces(this.value);">
+    <script>
+function removeRedundantSpaces(text_for_Editing)
+{
+var extraSpaces = new RegExp("[ ]{2,}","g");
+return text_for_Editing.replace(extraSpaces," ");
+}
+removeRedundantSpaces(" зайві пробіли ");
+    </script>
+  </body>
+</html>

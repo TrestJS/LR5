@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Скрипник ПІ 19-01</title>
+</head>
+<body>
+  <script>  
+     function stringIsLvivPhoneNumber(phoneNumber){
+      let re = new RegExp(/^(\(032\))?[0-9]{3}-?[0-9]{2}-?[0-9]{2}$/);
+      if(re.test(phoneNumber)){
+        alert(phoneNumber + " - Такий текстовий рядок є записом львівського міського телефонного номера.");
+      }
+      else{
+        alert(phoneNumber + " - Такий текстовий рядок не є записом львівського міського телефонного номера.")
+      }
+     }
+     stringIsLvivPhoneNumber("2977777");
+  </script>
+</body>
+</html>

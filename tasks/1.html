@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+    <title>Скрипник ПІ 19-01</title>
+  </head>
+  <body>
+    <script>
+       function stringIsPhoneNumber(phoneNumber){
+        let re = new RegExp("^380[3569]{1}[0-9]{8}$");
+       if (re.test(phoneNumber)) {
+        alert("Текстовий рядок є записом мобільного телефону. Номер телефону: " + phoneNumber);
+      }
+      else {
+        alert("Текстовий рядок не є записом мобільного телефону. Текстовий рядок: " + phoneNumber);
+      }
+       }
+       stringIsPhoneNumber("380665975343");
+    </script>
+  </body>
+</html>

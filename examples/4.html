@@ -1,0 +1,24 @@
+<textarea rows="20" cols="20" id="editor">
+<!DOCTYPE html>
+<i>some text<i>
+    <b>some text</i>
+    <br>
+    <br>
+    <br>
+    <head>
+    <title>Скрипник ПІ 19-01</title>
+  </head>
+  <body>
+    <script>
+function clearTextFromHTMLTags(textForEditing)
+{
+var tagTemplate = new RegExp("</?[a-zA-Z]{1,}/?>","g");
+return textForEditing.replace(tagTemplate,"");
+}
+    </script>
+  </body>
+</html>
+</textarea >
+<input type="button" value="Clear text"
+onclick="document.getElementById('editor').
+value=clearTextFromHTMLTags(document.getElementById('editor').value);" >

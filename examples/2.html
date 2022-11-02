@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+    <head>
+    <title>Скрипник ПІ 19-01</title>
+  </head>
+  <body>
+    <script>
+function testPhoneNumber(str)
+{
+if(!str.length)
+alert("Номер телефону задано некоректно");
+var phoneTemplate = new RegExp("2?[0-9]{6}");
+str = str.replace(phoneTemplate,"");
+if(str != "")
+alert("Номер телефону задано некоректно");
+}
+testPhoneNumber("0652463257");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>Скрипник ПІ 19-01</title>
+</head>
+<body>
+  <script>
+function stringIsIndexLviv(index){
+        let re = new RegExp("^790[0-7]{1}[0-9]{1}");
+       if (re.test(index)) {
+        alert(index + " = Такий текстовий рядок є поштовим індексом Львова");
+      }
+      else {
+        alert(index + " = Такий текстовий рядок не є поштовим індексом Львова");
+      }
+       }
+       stringIsIndexLviv("79007");
+  </script>
+</body>
+</html>

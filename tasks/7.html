@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+  <head>
+    <title>Скрипник ПІ 19-01</title>
+  </head>
+  <body>
+    <script>
+     function verify(year){
+      let re = new RegExp("(([1]{1}[9]{1}[0-9]{2})){1}|(([2]{1}[0]{1}[0-9]{2})){1}$");
+    if (re.test(year)) {
+        alert(year + " - Такий текстовий рядок є представленням року в межах від 1900 до 2099.");
+    }
+    else{
+        alert(year + " - Такий текстовий рядок не є представленням року в межах від 1900 до 2099.");
+    } 
+     }
+     verify("2022");
+         </script>
+  </body>
+</html>

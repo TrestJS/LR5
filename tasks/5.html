@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+  <head>
+    <title>Скрипник ПІ 19-01</title>
+  </head>
+  <body>
+    <a>Консоль</a>
+    <script>
+    function remove(string){
+        console.log("Текстовий рядок: " + string);
+        let re = new RegExp("<p>|<br>|<font>|<hr>");
+           if (re.test(string)) {
+             string = string.replace(re, "");
+           }
+           console.log("Текстовий рядок після видалення: " + string); }
+          let string= '<a>Скрипник <br> Роман <hr> </a>"';
+          remove(string);
+         </script>
+  </body>
+</html>
